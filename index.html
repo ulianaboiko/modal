@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/modal.css" />
+    <link rel="stylesheet" href="./src/css/dialog.css" />
+  </head>
+  <body>
+    <button class="btn-open btn" data-modal-open>Відкрити</button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="btn-close btn" data-modal-close>Закрити</button>
+        <p>...</p>
+      </div>
+    </div>
+    <!-- 2 спосіб -->
+    <button class="btn-open btn" data-dialog-open>
+      Відкрити діалогове вікно
+    </button>
+    <dialog class="dialog" data-dialog>
+      <button class="btn-close btn" data-dialog-close>
+        Закрити діалогове вікно
+      </button>
+      <p>...</p>
+    </dialog>
+
+    <script src="./src/js/modal.js"></script>
+    <script src="./src/js/dialog.js"></script>
+  </body>
+</html>
