@@ -5,28 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/css/modal.css" />
-    <link rel="stylesheet" href="./src/css/dialog.css" />
   </head>
   <body>
     <button class="btn-open btn" data-modal-open>Відкрити</button>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="btn-close btn" data-modal-close>Закрити</button>
-        <p>...</p>
+        <form class="contact-form" action="#">
+          <h2 class="contact-title">Reach out to us!</h2>
+          <div class="contact-group">
+            <label class="invisible-label" for="name">Name</label>
+            <input
+              class="contact-input"
+              type="text"
+              id="name"
+              placeholder="Your name*"
+            />
+          </div>
+          <div class="contact-group">
+            <label class="invisible-label" for="email">Email</label>
+            <input
+              class="contact-input"
+              type="email"
+              id="email"
+              placeholder="Your e-mail*"
+            />
+          </div>
+          <div class="contact-group">
+            <label class="invisible-label" for="message">Message</label>
+            <textarea
+              class="contact-message"
+              name="contact-message"
+              id="message"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+          <button class="contact-submit" type="submit">Your message</button>
+        </form>
       </div>
     </div>
-    <!-- 2 спосіб -->
-    <button class="btn-open btn" data-dialog-open>
-      Відкрити діалогове вікно
-    </button>
-    <dialog class="dialog" data-dialog>
-      <button class="btn-close btn" data-dialog-close>
-        Закрити діалогове вікно
-      </button>
-      <p>...</p>
-    </dialog>
 
     <script src="./src/js/modal.js"></script>
-    <script src="./src/js/dialog.js"></script>
   </body>
 </html>
